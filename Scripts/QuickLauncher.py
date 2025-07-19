@@ -34,6 +34,7 @@ def main():
     choice = input("Choose (0-8): ").strip()
     
     script_dir = Path(__file__).parent
+    project_root = script_dir.parent
     
     scripts = {
         "1": "FinderDisplay/ListFilesByDate.py",
@@ -60,13 +61,13 @@ def main():
             if choice == "3":
                 search_term = input("🔍 Search for: ").strip()
                 if search_term:
-                    subprocess.run([sys.executable, str(script_path), search_term])
+                    subprocess.run([sys.executable, str(script_path), search_term], cwd=project_root)
             elif choice == "6":
                 confirm = input("⚠️ This will commit/push to GitHub. Continue? (y/n): ")
                 if confirm.lower() in ['y', 'yes']:
-                    subprocess.run([sys.executable, str(script_path)])
+                    subprocess.run([sys.executable, str(script_path)], cwd=project_root)
             else:
-                subprocess.run([sys.executable, str(script_path)])
+                subprocess.run([sys.executable, str(script_path)], cwd=project_root)
         else:
             print(f"❌ Script not found: {script_path}")
     else:
