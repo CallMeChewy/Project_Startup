@@ -1,0 +1,73 @@
+{
+  "_header": {
+    "file": "python_basic.json",
+    "path": "/home/herb/Desktop/Project_Startup/templates/base_structure/python_basic.json",
+    "standard": "AIDEV-PascalCase-2.1",
+    "created": "2025-01-19",
+    "last_modified": "2025-01-19 09:02AM",
+    "description": "Basic Python project structure template for Project_Startup"
+  },
+  "name": "Python Basic",
+  "description": "Basic Python project structure for general development",
+  "directories": [
+    "src",
+    "tests", 
+    "docs",
+    "config",
+    "examples"
+  ],
+  "files": [
+    {
+      "name": "README.md",
+      "template": "README_template.md",
+      "required": true
+    },
+    {
+      "name": ".gitignore", 
+      "template": "gitignore_python.txt",
+      "required": true
+    },
+    {
+      "name": "requirements.txt",
+      "template": "requirements_basic.txt", 
+      "required": true
+    },
+    {
+      "name": "CLAUDE.md",
+      "template": "claude_template.md",
+      "required": true
+    },
+    {
+      "name": "src/__init__.py",
+      "template": "init_template.py",
+      "required": true
+    },
+    {
+      "name": "src/main.py",
+      "template": "main_template.py",
+      "required": true
+    },
+    {
+      "name": "tests/__init__.py",
+      "template": "init_template.py",
+      "required": true
+    }
+  ],
+  "symlinks": [
+    {
+      "source": "shared_scripts",
+      "target": "scripts", 
+      "type": "directory"
+    },
+    {
+      "source": "shared_configs/.vscode",
+      "target": ".vscode",
+      "type": "directory"
+    }
+  ],
+  "settings": {
+    "create_venv": true,
+    "python_version": "3.11",
+    "install_requirements": true
+  }
+}

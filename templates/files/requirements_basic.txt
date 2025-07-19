@@ -1,0 +1,23 @@
+# File: requirements_basic.txt
+# Path: /home/herb/Desktop/Project_Startup/templates/files/requirements_basic.txt
+# Standard: AIDEV-PascalCase-2.1
+# Created: 2025-01-19
+# Last Modified: 2025-07-19  07:58PM
+# Description: Basic Python requirements template for Project_Startup generated projects
+
+# Runtime dependencies
+requests>=2.31.0
+pathspec>=0.11.2
+
+# Optional GUI dependencies
+# PySide6
+
+# Optional data science dependencies  
+# pandas
+# numpy
+# matplotlib
+
+# Optional web dependencies
+# flask
+# fastapi
+# django

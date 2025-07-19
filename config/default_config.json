@@ -1,0 +1,96 @@
+{
+  "_header": {
+    "file": "default_config.json",
+    "path": "/home/herb/Desktop/Project_Startup/config/default_config.json",
+    "standard": "AIDEV-PascalCase-2.1",
+    "created": "2025-01-19",
+    "last_modified": "2025-01-19 08:54AM",
+    "description": "Default configuration template for new project creation with Project_Startup"
+  },
+  "project_info": {
+    "author": "Herb Bowers",
+    "email": "HimalayaProject1@gmail.com",
+    "license": "MIT",
+    "description_template": "A new project created with Project_Startup"
+  },
+  "structure": {
+    "directories": [
+      "Src",
+      "Tests", 
+      "Docs",
+      "Config",
+      "Examples"
+    ],
+    "create_venv": true,
+    "python_version": "3.11",
+    "install_requirements": true
+  },
+  "files": [
+    {
+      "name": "README.md",
+      "template": "README_template.md",
+      "required": true
+    },
+    {
+      "name": ".gitignore", 
+      "template": "gitignore_python.txt",
+      "required": true
+    },
+    {
+      "name": "requirements.txt",
+      "template": "requirements_basic.txt", 
+      "required": true
+    },
+    {
+      "name": "LICENSE",
+      "template": "license_mit.txt",
+      "required": false
+    },
+    {
+      "name": "CLAUDE.md",
+      "template": "claude_template.md",
+      "required": true
+    }
+  ],
+  "symlinks": [
+    {
+      "source": "/home/herb/Desktop/Project_BaseFiles/Scripts",
+      "target": "Scripts", 
+      "type": "directory",
+      "description": "Link to shared Project_BaseFiles utility scripts"
+    },
+    {
+      "source": "/home/herb/Desktop/Project_BaseFiles/Config/VSCode/settings.json",
+      "target": ".vscode/settings.json",
+      "type": "file", 
+      "description": "Link to shared VS Code settings"
+    },
+    {
+      "source": "/home/herb/Desktop/Project_BaseFiles/Docs/Standards",
+      "target": "Docs/Standards",
+      "type": "directory", 
+      "description": "Link to shared design standards documentation"
+    }
+  ],
+  "git": {
+    "initialize": true,
+    "initial_commit": false,
+    "default_branch": "main"
+  },
+  "github": {
+    "check_repository": true,
+    "initial_commit": true,
+    "push_to_remote": false
+  },
+  "integrations": {
+    "link_to_project_basefiles": true,
+    "inherit_design_standards": true,
+    "copy_design_standard": true
+  },
+  "advanced": {
+    "backup_existing": true,
+    "validate_before_create": true,
+    "show_progress": true,
+    "dry_run_option": true
+  }
+}

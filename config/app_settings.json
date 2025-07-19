@@ -1,0 +1,44 @@
+{
+  "_header": {
+    "file": "app_settings.json",
+    "path": "/home/herb/Desktop/Project_Startup/config/app_settings.json",
+    "standard": "AIDEV-PascalCase-2.1",
+    "created": "2025-01-19",
+    "last_modified": "2025-01-19 08:56AM",
+    "description": "Application-wide settings and preferences for Project_Startup GUI and behavior"
+  },
+  "ui": {
+    "theme": "system",
+    "window_size": [800, 600],
+    "remember_geometry": true,
+    "show_tooltips": true,
+    "confirm_dangerous_operations": true
+  },
+  "paths": {
+    "project_base": "~/Desktop",
+    "templates_dir": "./templates",
+    "shared_resources_dir": "./shared_resources",
+    "project_configs_dir": "./project_configs",
+    "project_basefiles_dir": "~/Desktop/Project_BaseFiles"
+  },
+  "behavior": {
+    "auto_check_github": true,
+    "remember_last_config": true,
+    "validate_on_input": true,
+    "auto_save_configs": true,
+    "show_advanced_options": false
+  },
+  "logging": {
+    "level": "INFO",
+    "log_to_file": true,
+    "log_file": "./logs/project_startup.log",
+    "max_log_size_mb": 10,
+    "backup_count": 5
+  },
+  "admin": {
+    "enable_admin_mode": true,
+    "admin_trigger": "***",
+    "require_confirmation": true,
+    "backup_configs_before_edit": true
+  }
+}

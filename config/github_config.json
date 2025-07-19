@@ -1,0 +1,40 @@
+{
+  "_header": {
+    "file": "github_config.json",
+    "path": "/home/herb/Desktop/Project_Startup/config/github_config.json",
+    "standard": "AIDEV-PascalCase-2.1",
+    "created": "2025-01-19",
+    "last_modified": "2025-01-19 09:11AM",
+    "description": "GitHub account and API configuration for Project_Startup repository operations"
+  },
+  "account": {
+    "username": "CallMeChewy",
+    "email": "HimalayaProject1@gmail.com",
+    "ssh_key_path": "~/.ssh/id_rsa",
+    "personal_access_token": "",
+    "api_base_url": "https://api.github.com"
+  },
+  "authentication": {
+    "method": "ssh",
+    "fallback_to_pat": true,
+    "pat_token_env_var": "GITHUB_PAT"
+  },
+  "repository": {
+    "default_visibility": "public",
+    "default_branch": "main",
+    "auto_init": false,
+    "gitignore_template": "",
+    "license_template": ""
+  },
+  "operations": {
+    "timeout_seconds": 30,
+    "retry_attempts": 3,
+    "verify_ssl": true,
+    "use_ssh": true
+  },
+  "dangerous_operations": {
+    "allow_repo_recreation": true,
+    "require_confirmation": true,
+    "backup_before_delete": false
+  }
+}
